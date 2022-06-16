@@ -15,14 +15,13 @@
 # in the templates via {{ site.myvariable }}.
 title: Multi-LexSum
 description: >
-  Multi-LexSum is an abstractive summarization dataset for court documents of civil rights litigations. 
+  Multi-LexSum is a multi-doc summarization dataset for civil rights litigations lawsuits with summaries of three granularities.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://multilexsum.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-archives
 
