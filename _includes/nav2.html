@@ -1,0 +1,27 @@
+<nav class="has-text-centered pb-5 is-family-sans-serif" role="navigation">
+    <h1 class="site-title is-size-2">
+        <a href="/">
+            {{ site.title }}
+        </a>
+    </h1>
+    {% if include.show_title == true %}
+        <span class="subtitle is-size-4 is-italic site-subtitle">
+            {{ site.data.meta.personal.title | markdownify }}
+        </span>
+        <div class="is-divider mb-0"></div>
+    {% else %}
+        <div class="is-divider mt-1 mb-0"></div>
+    {% endif %}
+    
+    <div>
+        <div class="tabs is-centered">
+            <ul>
+              {% for item in site.data.settings.menu %}
+              <li>
+                <a href="/{{ item.file }}" class="navbar-item">{{ item.name }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>

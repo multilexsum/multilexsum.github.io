@@ -1,0 +1,10 @@
+# If you are not using Google Analytics, please change 'google-ID' to an empty string
+# google-ID: x
+# disqus-ID: x
+# utterances-repo: x
+
+menu:
+- {name: 'Overview', file: ''}
+- {name: 'Download', file: 'download.html'}
+- {name: 'Examples', file: 'examples.html'}
+- {name: 'Dataset Sheet', file: ''}
