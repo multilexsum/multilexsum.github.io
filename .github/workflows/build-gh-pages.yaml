@@ -12,4 +12,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
           GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-        uses: lolipopshock/jekyll-deploy-gh-pages@98db2f11b98db4d2231b04e5a8caa80744c27947
+        uses: lolipopshock/jekyll-deploy-gh-pages@84446b8aaa380af674bf498494e8da14c3d7b1f3
