@@ -1,3 +1,6 @@
 index:
-
+  subtitle:
+    A multi-doc summarization dataset with summaries of three granularities
+  description: | 
+      Multi-LexSum is a multi-doc summarization dataset for civil rights litigations lawsuits with summaries of three granularities. 
 footnote: 
