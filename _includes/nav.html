@@ -13,15 +13,31 @@
         <ul>
           {% for item in site.data.settings.menu %}
           {% if forloop.first %}
-            <li class="pr-2">
+            <li>
               <a href="{{ item.file }}" class="pl-0 navbar-item">{{ item.name }}</a>
             </li>
           {% else %}
-            <li class="pr-2">
+            <li>
               <a href="{{ item.file }}" class="navbar-item">{{ item.name }}</a>
             </li>
           {% endif %}
           {% endfor %}
+          
+          {% if site.data.settings.social %}
+            <li class="px-4">|</li>
+            {% for item in site.data.settings.social %}
+              <li>
+                <a href="{{ item.link }}" class="button is-white" style="padding-bottom: 0.35em;margin-bottom: 0px;">
+                    <i class="{{ item.icon }} fa-w-14" aria-hidden="true"></i>
+                </a>
+              </li>
+            {% endfor %}
+            <li>
+              <a href="https://arxiv.org/abs/2206.10883" class="button is-white">
+                <img src="https://img.shields.io/badge/arXiv-555555.svg" title="Multi-LexSum Paper">
+              </a>
+            </li>
+          {% endif %}
         </ul>
     </div>
 </nav>

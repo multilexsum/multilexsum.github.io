@@ -4,7 +4,13 @@
 # utterances-repo: x
 
 menu:
-- {name: 'Overview', file: ''}
 - {name: 'Download', file: 'https://github.com/multilexsum/dataset'}
 - {name: 'Examples', file: 'https://github.com/multilexsum/dataset/blob/main/example.ipynb'}
+- {name: 'Team', file: ''}
 - {name: 'Dataset Sheet', file: 'https://docs.google.com/document/d/1bkPQeoiwjh8CVL5usJD77W2qBXmRFu1-BJUDXb1Vm6U/edit?usp=sharing'}
+
+social:
+- {name: 'github', icon: 'fab fa-github', link: 'https://github.com/multilexsum/dataset', 
+   display-link: 'MultiLexSum Github', display-icon: "fab fa-github-square"}
+- {name: 'semantic-reader', icon: 'ai ai-semantic-scholar ai-lg', link: 'https://www.semanticscholar.org/reader/53b018c4c6d9ea6bfde2294992b5717438a6e68a', 
+   display-link: 'MultiLexSum Github', display-icon: "fab fa-github-square"}
