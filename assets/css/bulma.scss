@@ -92,26 +92,6 @@ article {
 } // Because Bulma will change the default figure style.
 
 
-// Publication styles
-.publication-title {
-    font-family: $family-secondary;
-    font-weight: $weight-medium !important;
-    font-size: $size-5 !important;
-}
-
-.publication-name {
-    margin-top: -0.55rem;
-    font-family: $family-primary;
-    font-size: $size-6;
-}
-
-.publication-misc {
-    margin-top: -0.5rem;
-    font-size: $size-6;
-    font-family: $family-sans-serif;
-    color: $grey-light;
-}
-
 .header-link {
     position: relative;
     left: 0.5rem;
@@ -153,3 +133,4 @@ article {
     text-transform: capitalize;
     font-size: 2rem;
 }
+
