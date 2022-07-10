@@ -7,18 +7,33 @@
 
 <body>
     <section class="hero">
-        <div class="hero-body">
+        <div class="hero-body pb-2">
             <div class="container">
-                {% include nav.html %}  
-            </div>
-            <div class="container">
-                <div class="is-family-secondary is-size-5 mb-5 pb-3">
-                    {{ site.data.meta.index.description | markdownify }}
+                <div class="columns">
+                    <div class="column is-11 is-offset-1">
+                        <div class="container">
+                            {% include nav.html %}  
+                        </div>
+                    <div>
                 </div>
-                <aside>
-                    <h1>Heading and stuff</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </aside>
+            </div>
+        </div>
+    </section>
+    <section class="hero">
+        <div class="hero-body py-2">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-1 pt-4" style="writing-mode: vertical-rl; text-orientation: mixed;">
+                        <h2 class="title is-uppercase has-text-grey-lighter" style="font-weight: 300;">
+                            Overview
+                        </h2>
+                    </div>
+                    <div class="column is-10">
+                        <div class="is-family-secondary is-size-5 mb-5 pb-3">
+                            {{ site.data.meta.index.description | markdownify }}
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
