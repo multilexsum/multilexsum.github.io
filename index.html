@@ -6,10 +6,15 @@
 {% include head.html %}
 
 <body>
-    <section class="hero is-large">
+    <section class="hero">
         <div class="hero-body">
-            <div class="container has-text-centered">
-                {% include nav2.html %}  
+            <div class="container">
+                {% include nav.html %}  
+            </div>
+            <div class="container">
+                <div class="is-family-secondary is-size-5 mb-5 pb-3">
+                    {{ site.data.meta.index.description | markdownify }}
+                </div>
             </div>
         </div>
     </section>
