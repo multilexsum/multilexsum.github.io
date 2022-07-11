@@ -73,25 +73,25 @@
                             <div class="column is-4">
                                 <aside class="menu" id="example-summary-panel">
                                     <ul class="menu-list">
-                                        {% assign count = 0 %}
                                         {% for item in site.data.meta.index.background.summaries %}
-                                            <li class="my-4" style="display:block">
-                                                <a {% if count==0 %} class="is-active" {% endif %} style="display:block" id="summary-{{ item.length }}">
+                                            <li {% unless forloop.first %} class="my-4" {% endunless %} style="display:block">
+                                                <a {% if forloop.first %} class="is-active" {% endif %} style="display:block" id="summary-{{ item.length }}">
                                                     <p class="title is-5">{{ item.length | capitalize }} Summary</p>
                                                     <p class="subtitle is-6 is-italic has-text-grey-light">{{ item.description }}</p>
                                                 </a>
                                             </li>
-                                            {% assign count = count | plus : 1 %}
                                         {% endfor %}
                                     </ul>
                                 </aside>
                             </div>
                             <div class="column is-8">
-                                {% for item in site.data.meta.index.background.summaries %}
-                                    <div class="{% if forloop.first %} is-active {% endif %} one-example-summary" id="example-summary-{{ item.length }}-text">
-                                        {{ item.text | markdownify }}
-                                    </div>  
-                                {% endfor %}
+                                <div class="content" style="min-height: 300px;">
+                                    {% for item in site.data.meta.index.background.summaries %}
+                                        <div class="{% if forloop.first %} is-active {% endif %} one-example-summary" id="example-summary-{{ item.length }}-text">
+                                            {{ item.text | markdownify }}
+                                        </div>  
+                                    {% endfor %}
+                                </div>
                             </div>
                         </div>
                     </div>
