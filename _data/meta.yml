@@ -68,5 +68,25 @@ index:
       The corresponding code for downloading and loading the dataset is licensed under the Apache License 2.0. 
 
     download: |
+      The Multi-LexSum dataset can be loaded via HuggingFace Datasets:
+
+    downloadcode: |
+
+      ```python
+      from datasets import load_dataset
+      
+      multi_lexsum = load_dataset("multi_lexsum.py", name="v20220616")
+      # Download multi_lexsum locally and load it as a Dataset object 
+      
+      example = multi_lexsum["validation"][0] # The first instance of the dev set 
+      example["sources"] # A list of source document text for the case
+      
+      for sum_len in ["long", "short", "tiny"]:
+          print(example["summary/" + sum_len]) # Summaries of three lengths
+      ```
+    
+    download2: | 
+      Right now we are working on merging the script to the official HF dataset library. Therefore 
+      you might need to download the `multi_lexsum.py` file manually from our [Github repo](https://github.com/multilexsum/dataset).
 
 footnote: 
