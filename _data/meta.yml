@@ -55,7 +55,18 @@ index:
           2005 class action settlement resulted in Ford paying $8.55m to redesign its selection process for apprenticeship programs to address the previous process's disparate impact on Black applicants.
     dataset: |
       The Multi-LexSum dataset is a collection of 9,280 such legal case summaries.
-      Multi-LexSum is distinct from other datasets in its ***multiple target summaries, each at a different granularity*** (ranging from one-sentence "extreme" summaries to multi-paragraph narrations of over five hundred words). 
-      It presents a challenging multi-document summarization task given ***the long length of the source documents***, often exceeding two hundred pages per case.
-      Unlike other summarization datasets that are (semi-)automatically curated, Multi-LexSum consists of ***expert-authored summaries***: the experts---lawyers and law students---are trained to follow carefully created guidelines, and their work is reviewed by an additional expert to ensure quality.
+      Multi-LexSum is distinct from other datasets in its **<span class="is-underlined">multiple target summaries, each at a different granularity</span>** (ranging from one-sentence "extreme" summaries to multi-paragraph narrations of over five hundred words). 
+      It presents a challenging multi-document summarization task given **<span class="is-underlined">the long length of the source documents</span>**, often exceeding two hundred pages per case.
+      Unlike other summarization datasets that are (semi-)automatically curated, Multi-LexSum consists of **<span class="is-underlined">expert-authored summaries</span>**: the experts---lawyers and law students---are trained to follow carefully created guidelines, and their work is reviewed by an additional expert to ensure quality.
+      
+      For more details on how the dataset is created, please refer to the [dataset sheet](https://docs.google.com/document/d/1bkPQeoiwjh8CVL5usJD77W2qBXmRFu1-BJUDXb1Vm6U/edit?usp=sharing) and [our paper](https://arxiv.org/abs/2206.10883). 
+
+    license: |
+      The Multi-LexSum dataset is distributed under the [Open Data Commons Attribution License (ODC-By)](https://opendatacommons.org/licenses/by/1-0/). 
+      The case summaries and metadata are licensed under the [Creative Commons Attribution License (CC BY-NC)](https://creativecommons.org/licenses/by-nc/4.0/), and the source documents are already in the public domain. 
+      Commercial users who desire a license for summaries and metadata can contact [info@clearinghouse.net](mailto:info@clearinghouse.net), which will allow free use but limit summary re-posting. 
+      The corresponding code for downloading and loading the dataset is licensed under the Apache License 2.0. 
+
+    download: |
+
 footnote: 
