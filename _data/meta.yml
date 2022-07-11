@@ -3,4 +3,33 @@ index:
     A multi-doc summarization dataset with summaries of three granularities
   description: | 
       Multi-LexSum is a multi-doc summarization dataset for civil rights litigations lawsuits with summaries of three granularities. 
+  background:
+    description: |
+      Legal experts needs to read multiple long documents to understand a lawsuit. 
+    docs: 
+      - title: Docket
+        icon: 'assets/example-docs/docket.svg'
+        image: 'assets/example-docs/docket.jpg'
+        description: The court's record of everything that has happened in a case
+        link: https://clearinghouse.net/doc/23477/
+      - title: Complaint
+        icon: 'assets/example-docs/complaint.svg'
+        image: 'assets/example-docs/complaint.jpg'
+        description: The document that starts a case, establishing the parties and claims
+        link: https://clearinghouse.net/doc/23481/
+      - title: Motions/Briefs
+        icon: 'assets/example-docs/motion.svg'
+        image: 'assets/example-docs/motion.jpg'
+        description: Documents filed by the parties in order to make their arguments
+        link: https://clearinghouse.net/doc/1128/
+      - title: Opinions
+        icon: 'assets/example-docs/opinion.svg'
+        image: 'assets/example-docs/opinion.jpg'
+        description: Created by the judge(s) to memorialize rulings in the case
+        link: https://clearinghouse.net/doc/33726/
+      - title: Settlement
+        icon: 'assets/example-docs/settlement.svg'
+        image: 'assets/example-docs/settlement.jpg'
+        description: An agreement among parties that resolves some issues in the case
+        link: https://clearinghouse.net/doc/33727/
 footnote: 
