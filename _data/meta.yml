@@ -53,4 +53,9 @@ index:
         description: One sentence, ~25 words
         text: |
           2005 class action settlement resulted in Ford paying $8.55m to redesign its selection process for apprenticeship programs to address the previous process's disparate impact on Black applicants.
+    dataset: |
+      The Multi-LexSum dataset is a collection of 9,280 such legal case summaries.
+      Multi-LexSum is distinct from other datasets in its ***multiple target summaries, each at a different granularity*** (ranging from one-sentence "extreme" summaries to multi-paragraph narrations of over five hundred words). 
+      It presents a challenging multi-document summarization task given ***the long length of the source documents***, often exceeding two hundred pages per case.
+      Unlike other summarization datasets that are (semi-)automatically curated, Multi-LexSum consists of ***expert-authored summaries***: the experts---lawyers and law students---are trained to follow carefully created guidelines, and their work is reviewed by an additional expert to ensure quality.
 footnote: 
