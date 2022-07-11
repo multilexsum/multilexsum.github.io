@@ -32,12 +32,10 @@
                         <div class="is-family-secondary is-size-5 mb-5 pb-3">
                             Legal experts read a lot of documents to understand a lawsuit. 
                         </div>
-                        <div class="carousel p-3">
-                            <img class="pr-5 item" src="doc.png"/>
-                            <img class="pr-5 item" src="doc.png"/>
-                            <img class="pr-5 item" src="doc.png"/>
-                            <img class="pr-5 item" src="doc.png"/>
-                            <img class="pr-5 item" src="doc.png"/>
+                        <div class="carousel columns is-mobile">
+                            {% for item in site.data.meta.index.background.docs %}
+                                {% include carousel-card.html detail=item %}
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

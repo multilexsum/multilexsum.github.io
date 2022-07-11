@@ -139,12 +139,29 @@ article {
     flex-wrap: no-wrap; 
     overflow-x: auto; 
     scroll-snap-type: x proximity;
+    scrollbar-width: none; 
+    
+    @media screen and (max-width: $tablet) {
+        .column {
+            width: 24.5em !important; 
+            max-width: 24.5em !important;
+            min-width: 24.5em !important;
+        }
+    }
+    @media screen and (min-width: $tablet)  {
+        .column {
+            width: 20em !important; 
+            max-width: 20em !important;
+            min-width: 20em !important;
+        }
+    }
 }
 
-.carousel .item {
+.carousel .carousel-item {
     scroll-snap-align: start; 
     flex: 0 0 auto; 
-    max-width: 100%; 
-    height: 400px; 
-    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.25));
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
 }
