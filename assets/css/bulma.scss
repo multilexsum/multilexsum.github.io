@@ -175,3 +175,7 @@ article {
 .one-example-summary.is-active {
     display: initial;
 }
+.is-show-summary-part {
+    max-height: 20rem;
+    overflow: hidden;
+}

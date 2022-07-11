@@ -53,7 +53,17 @@
                         menu.parentElement.nextElementSibling.querySelector("#example-" + atag.id + "-text").classList.add("is-active");
                     }
                 })
-            })
+            });
+            document.querySelectorAll(".show-more-summary").forEach(button => {
+                button.onclick = () => {
+                    if (button.textContent === "Show Less") {
+                        button.textContent = "Show More";
+                    } else {
+                        button.textContent = "Show Less";
+                    };
+                    button.parentElement.children[0].classList.toggle("is-show-summary-part");
+                }
+            });
         }
     </script>
     <section class="hero">
@@ -85,11 +95,20 @@
                                 </aside>
                             </div>
                             <div class="column is-8">
-                                <div class="content" style="min-height: 300px;">
+                                <div class="content" style="min-height: 20rem;">
                                     {% for item in site.data.meta.index.background.summaries %}
                                         <div class="{% if forloop.first %} is-active {% endif %} one-example-summary" id="example-summary-{{ item.length }}-text">
-                                            {{ item.text | markdownify }}
-                                        </div>  
+                                            {% if item.length == "long" %}
+                                                <article class="is-show-summary-part">
+                                                    {{ item.text | markdownify }}
+                                                </article>
+                                                <div class="show-more-summary is-italic has-text-info">Show More</div>
+                                            {% else %}
+                                                <article>
+                                                    {{ item.text | markdownify }}
+                                                </article>  
+                                            {% endif %} 
+                                        </div>
                                     {% endfor %}
                                 </div>
                             </div>
