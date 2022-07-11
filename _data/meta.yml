@@ -4,8 +4,8 @@ index:
   description: | 
       Multi-LexSum is a multi-doc summarization dataset for civil rights litigations lawsuits with summaries of three granularities. 
   background:
-    description: |
-      Legal experts needs to read multiple long documents to understand a lawsuit. 
+    motivation: |
+      Legal experts needs to read ***multiple long*** documents to understand a lawsuit. 
     docs: 
       - title: Docket
         icon: 'assets/example-docs/docket.svg'
@@ -32,4 +32,23 @@ index:
         image: 'assets/example-docs/settlement.jpg'
         description: An agreement among parties that resolves some issues in the case
         link: https://clearinghouse.net/doc/33727/
+    summary: |
+      Summaries of ***three different granularities*** are created to facilitate their understanding. 
+    summaries: 
+      - length: long 
+        description: Multiple paragraphs, ~650 words
+        text: |
+          This case is about an apprenticeship test that had a disparate impact on Black apprenticeship applicants. The Equal Employment Opportunity Commission (EEOC) filed this lawsuit on December 27, 2004, in U.S. District Court for the Southern District of Ohio. Filing on behalf of thirteen Black individuals and a class of similarly situated Black apprenticeship test takers, the EEOC alleged that the individuals' employer, the Ford Motor Company, as well as their union, the United Automobile, Aerospace, and Agricultural implement workers of America (the "UAW"), and the Ford-UAW Joint Apprenticeship Committee, violated Title VII of the Civil Rights Act, 42 U.S.C. § 1981, and Michigan state anti-discrimination law. At issue were the selection tests for apprenticeship training programs, whose disparate impact denied Black applicants eligibility and admission. The EEOC sought injunctive relief, as well as damages (including backpay) for the Black apprenticeship applicants. The case was assigned to Judge Susan J. Dlott.
+
+          The individuals also brought a separate class action against Ford and the UAW, Robinson v. Ford Motor Company, (No. 1:04-cv-00844), and the cases were consolidated on January 6, 2005. As a result, the case was transferred to Judge S. Arthur Spiegel. Six months later, in June 2005, both cases were resolved via a class settlement agreement. Ford agreed to pay $8.55 million and to implement a new selection process for its apprenticeship programs. This agreement further required Ford to hire an industrial psychologist to design this new selection process and to place 279 members of the settlement class on the eligibility list for the Ford apprenticeship program.
+
+          On June 15, 2005, the court found that the proposed settlement agreement was fair. 2005 WL 5253339. The next day, the court ordered that Ford pay $1.1 million to cover attorneys' fees and expenses incurred during settlement negotiations, and $567,000 to cover fees and expenses associated with the implementation and monitoring of the settlement agreement. 2005 U.S. Dist. LEXIS 12071. As the settlement was initially scheduled to last for three years, and there is no further activity on the docket sheet, this case presumably closed in 2008.
+      - length: short 
+        description: Single paragraph, ~130 words
+        text: |
+          This case is about an apprenticeship test that had a disparate impact on Black apprenticeship applicants. The Equal Employment Opportunity Commission (EEOC) filed this lawsuit on December 27, 2004, in U.S. District Court for the Southern District of Ohio. Filing on behalf of thirteen Black individuals and a class of similarly situated Black apprenticeship test takers, the EEOC alleged that the individuals' employer, the Ford Motor Company, as well as their union, the United Automobile, Aerospace, and Agricultural implement workers of America (the "UAW"), and the Ford-UAW Joint Apprenticeship Committee, violated Title VII of the Civil Rights Act, 42 U.S.C. § 1981, and Michigan state anti-discrimination law. The EEOC sought injunctive relief and damages for the Black apprenticeship applicants. The individuals also brought a separate class action against Ford and the UAW, and the cases were consolidated. In June 2005, both cases were resolved via a class settlement agreement. Ford agreed to pay $8.55 million and to implement a new selection process for its apprenticeship programs, and the court ordered Ford to cover attorneys' fees and expenses. This case is closed.
+      - length: tiny
+        description: One sentence, ~25 words
+        text: |
+          2005 class action settlement resulted in Ford paying $8.55m to redesign its selection process for apprenticeship programs to address the previous process's disparate impact on Black applicants.
 footnote: 

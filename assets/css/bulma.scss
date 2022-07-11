@@ -22,6 +22,9 @@ $tabs-border-bottom-width: 0.075rem;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
+$menu-item-active-background-color: hsl(219, 70%, 96%);
+$menu-item-hover-background-color: hsl(0, 0%, 98%);
+
 // Import Bulma
 @import "bulma/bulma";
 @import "bulma-divider/src/sass/index";
@@ -164,4 +167,11 @@ article {
 
 .carousel::-webkit-scrollbar {
     display: none;
+}
+
+.one-example-summary {
+    display: none;
+}
+.one-example-summary.is-active {
+    display: initial;
 }

@@ -7,12 +7,12 @@
 
 <body>
     <section class="hero">
-        <div class="hero-body pb-2">
+        <div class="hero-body pb-0">
             <div class="container">
                 <div class="columns is-mobile">
                     <div class="column is-11 is-offset-1">
                         <div class="container">
-                            {% include nav.html %}  
+                            {% include nav.html %}
                         </div>
                     <div>
                 </div>
@@ -20,7 +20,7 @@
         </div>
     </section>
     <section class="hero">
-        <div class="hero-body py-2">
+        <div class="hero-body py-4">
             <div class="container">
                 <div class="columns is-mobile">
                     <div class="column is-1 pt-4" style="writing-mode: vertical-rl; text-orientation: mixed;">
@@ -28,14 +28,71 @@
                             Overview
                         </h2>
                     </div>
-                    <div class="column is-10">
-                        <div class="is-family-secondary is-size-5 mb-5 pb-3">
-                            Legal experts read a lot of documents to understand a lawsuit. 
+                    <div class="column is-11">
+                        <div class="is-family-secondary is-size-5 mb-5">
+                            {{ site.data.meta.index.background.motivation | markdownify }}
                         </div>
                         <div class="carousel columns is-mobile">
                             {% for item in site.data.meta.index.background.docs %}
                                 {% include carousel-card.html detail=item %}
                             {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.onload = () => {
+            document.querySelectorAll("#example-summary-panel").forEach(menu => {
+                menu.querySelectorAll('a').forEach(atag => {
+                    atag.onclick = () => {
+                        menu.querySelector('a.is-active').classList.remove('is-active');
+                        atag.classList.add('is-active');
+                        menu.parentElement.nextElementSibling.querySelector(".one-example-summary.is-active").classList.remove("is-active");
+                        menu.parentElement.nextElementSibling.querySelector("#example-" + atag.id + "-text").classList.add("is-active");
+                    }
+                })
+            })
+        }
+    </script>
+    <section class="hero">
+        <div class="hero-body py-4">
+            <div class="container">
+                <div class="columns is-mobile">
+                    <div class="column is-1 pt-4" style="writing-mode: vertical-rl; text-orientation: mixed;">
+                        <h2 class="title is-uppercase has-text-grey-lighter" style="font-weight: 300;">
+                            Example
+                        </h2>
+                    </div>
+                    <div class="column is-11">
+                        <div class="is-family-secondary is-size-5 mb-5">
+                            {{ site.data.meta.index.background.summary | markdownify }}
+                        </div>
+                        <div class="columns">
+                            <div class="column is-4">
+                                <aside class="menu" id="example-summary-panel">
+                                    <ul class="menu-list">
+                                        {% assign count = 0 %}
+                                        {% for item in site.data.meta.index.background.summaries %}
+                                            <li class="my-4" style="display:block">
+                                                <a {% if count==0 %} class="is-active" {% endif %} style="display:block" id="summary-{{ item.length }}">
+                                                    <p class="title is-5">{{ item.length | capitalize }} Summary</p>
+                                                    <p class="subtitle is-6 is-italic has-text-grey-light">{{ item.description }}</p>
+                                                </a>
+                                            </li>
+                                            {% assign count = count | plus : 1 %}
+                                        {% endfor %}
+                                    </ul>
+                                </aside>
+                            </div>
+                            <div class="column is-8">
+                                {% for item in site.data.meta.index.background.summaries %}
+                                    <div class="{% if forloop.first %} is-active {% endif %} one-example-summary" id="example-summary-{{ item.length }}-text">
+                                        {{ item.text | markdownify }}
+                                    </div>  
+                                {% endfor %}
+                            </div>
                         </div>
                     </div>
                 </div>
