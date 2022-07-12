@@ -4,9 +4,9 @@
 # utterances-repo: x
 
 menu:
-- {name: 'Download', file: 'https://github.com/multilexsum/dataset'}
-- {name: 'Examples', file: 'https://github.com/multilexsum/dataset/blob/main/example.ipynb'}
-- {name: 'Team', file: ''}
+- {name: 'Examples', file: '#examples'}
+- {name: 'Download', file: '#download'}
+- {name: 'Team', file: '#team'}
 - {name: 'Dataset Sheet', file: 'https://docs.google.com/document/d/1bkPQeoiwjh8CVL5usJD77W2qBXmRFu1-BJUDXb1Vm6U/edit?usp=sharing'}
 
 social:

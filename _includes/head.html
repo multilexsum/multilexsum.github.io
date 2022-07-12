@@ -33,7 +33,7 @@
     <!-- Add link to h2 ... h6 -->
     <!-- Ref: https://ben.balter.com/2014/03/13/pages-anchor-links/ -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>
+    <!-- <script>
       $(function() {
         return $("h2, h3, h4, h5, h6").each(function(i, el) {
           var $el, icon, id;
@@ -45,9 +45,24 @@
           }
         });
       });
-    </script>
+    </script> -->
     
     <!-- Google Analytics -->
     {% include google-analytics.html %}
 
+    <!-- Smooth Scrolling -->
+    <script>
+      $(document).ready(function() {
+        $('a[href^="#"]').on('click', function(e) {
+          e.preventDefault();
+          var target = this.hash;
+          var $target = $(target);
+          $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 20
+          }, 500, 'swing', function() {
+            window.location.hash = target;
+          });
+        });
+      });
+    </script>
 </head>
