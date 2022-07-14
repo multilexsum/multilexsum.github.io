@@ -32,6 +32,9 @@
                         <div class="is-family-secondary is-size-5 mb-5">
                             {{ site.data.meta.index.background.motivation | markdownify }}
                         </div>
+                        <div class="is-family-secondary is-size-6 has-text-grey-light mb-2 is-italic">
+                            Swipe right for more example documents.
+                        </div>
                         <div class="carousel columns is-mobile">
                             {% for item in site.data.meta.index.background.docs %}
                                 {% include carousel-card.html detail=item %}
