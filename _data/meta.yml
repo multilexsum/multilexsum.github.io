@@ -94,5 +94,9 @@ index:
     
     teamoverview2: |
       Also hundreds of law student authored of the case summaries in Multi-LexSum, and their names are listed [here](https://clearinghouse.net/people).
+    
+  releases: 
+  - version: "v20220616"
+    description: "The initial release of the dataset."
       
 footnote: 
