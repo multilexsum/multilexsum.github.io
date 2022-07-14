@@ -151,28 +151,25 @@
                         <div class="is-family-secondary is-size-5 mb-4">
                             {{ site.data.meta.index.background.download | markdownify }}
                         </div>
-                        <div class="columns is-desktop">
-                            <div class="column is-4">
-                                <div class="is-family-secondary is-size-5">
-                                    <article class="panel">
-                                        <p class="panel-heading">
-                                            Releases
-                                        </p>
-                                        {% for release in site.data.meta.index.releases %}
-                                        <a class="panel-block">
-                                            <span class="tag is-white mr-4">{{ release.version }}</span>
-                                            {{ release.description }}
-                                        </a>
-                                        {% endfor %}
-                                    </article>
-                                </div>
-                            </div>
-                            <div class="column is-8">
-                                <div class="is-family-secondary is-size-6 mb-4" id="download-code">
-                                    {{ site.data.meta.index.background.downloadcode | markdownify }}
-                                </div>
-                            </div>
+
+
+                        <div class="is-family-secondary is-size-6 mb-4" id="download-code">
+                            {{ site.data.meta.index.background.downloadcode | markdownify }}
                         </div>
+                        
+                        <div class="is-family-secondary is-size-5 mb-4">
+                            The current releases are: 
+                        </div>
+                        
+                        <article class="panel" style="max-width: 30rem;">
+                            {% for release in site.data.meta.index.releases %}
+                            <a class="panel-block">
+                                <span class="tag is-white mr-4">{{ release.version }}</span>
+                                {{ release.description }}
+                            </a>
+                            {% endfor %}
+                        </article>
+
                         <div class="is-family-secondary is-size-5 mb-4">
                             {{ site.data.meta.index.background.download2 | markdownify }}
                         </div>
