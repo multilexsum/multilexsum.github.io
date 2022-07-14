@@ -1,0 +1,15 @@
+<div class="column is-{{include.column_width}} has-text-centered">
+
+    {% assign member = include.people %}
+
+
+    <figure class="image is-96x96 is-inline-block">
+        <img class="has-nuanced-shadow" src="/assets/people/{{ member.photo }}"
+            alt="{{member.name }}'s profile photo" style="border-radius: 15px;">
+    </figure>
+    <p class="title is-5 is-family-secondary has-text-weight-normal has-text-grey-darker" id="{{member.name}}"><a class="has-text-dark" {% if member.website != nil %} href="{{member.website}}" {% endif %}>{{member.name}}</a></p>
+    <p class="subtitle is-6 ">
+        <span class="has-text-grey">{{member.affiliation}}</span>
+    </p>
+
+</div>

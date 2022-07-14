@@ -15,3 +15,34 @@ social:
    display-link: 'MultiLexSum Github', display-icon: "fab fa-github-square"}
 - {name: 'semantic-reader', icon: 'ai ai-semantic-scholar ai-lg', link: 'https://www.semanticscholar.org/reader/53b018c4c6d9ea6bfde2294992b5717438a6e68a', 
    display-link: 'MultiLexSum Github', display-icon: "fab fa-github-square"}
+
+people:
+
+- name: Shannon Shen
+  website: https://www.szj.io
+  photo: shannon.jpg
+  affiliation: Allen Institute for AI 
+
+- name: Kyle Lo
+  website: https://kyleclo.github.io
+  photo: kyle.jpg
+  affiliation: Allen Institute for AI
+
+- name: Lauren Yu 
+  website: https://www.linkedin.com/in/laurenjyu
+  photo: lauren.jpg
+  affiliation: University of Michigan
+
+- name: Nathan Dahlberg 
+  website: https://www.linkedin.com/in/nathan-dahlberg-a068aa9b
+  photo: nathan.jpg
+
+- name: Margo Schlanger
+  website: https://michigan.law.umich.edu/faculty-and-scholarship/our-faculty/margo-schlanger
+  photo: margo.jpg
+  affiliation: University of Michigan
+
+- name: Doug Downey
+  website: https://users.cs.northwestern.edu/~ddowney/
+  photo: doug.jpg
+  affiliation: Allen Institute for AI
