@@ -5,7 +5,7 @@ index:
       Multi-LexSum is a multi-doc summarization dataset for civil rights litigations lawsuits with summaries of three granularities. 
   background:
     motivation: |
-      Legal experts needs to read ***multiple long*** documents to understand a lawsuit. 
+      Legal experts need to read ***multiple long*** documents to understand a lawsuit. 
     docs: 
       - title: Docket
         icon: 'assets/example-docs/docket.svg'
