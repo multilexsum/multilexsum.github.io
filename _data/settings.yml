@@ -8,7 +8,7 @@ menu:
 - {name: 'Download', file: '#download'}
 - {name: 'Team', file: '#team'}
 - {name: 'Paper', file: 'https://arxiv.org/abs/2206.10883'}
-- {name: 'DataSheet', file: 'https://docs.google.com/document/d/1bkPQeoiwjh8CVL5usJD77W2qBXmRFu1-BJUDXb1Vm6U/edit?usp=sharing'}
+- {name: 'DataSheet', file: '/datasheet'}
 
 social:
 - {name: 'github', icon: 'fab fa-github', link: 'https://github.com/multilexsum/dataset', 
