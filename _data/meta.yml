@@ -74,8 +74,9 @@ index:
 
       ```python
       from datasets import load_dataset
-      
-      multi_lexsum = load_dataset("multi_lexsum.py", name="v20220616")
+      # please install HuggingFace datasets by pip install datasets 
+
+      multi_lexsum = load_dataset("allenai/multi_lexsum", name="v20220616")
       # Download multi_lexsum locally and load it as a Dataset object 
       
       example = multi_lexsum["validation"][0] # The first instance of the dev set 
@@ -84,10 +85,6 @@ index:
       for sum_len in ["long", "short", "tiny"]:
           print(example["summary/" + sum_len]) # Summaries of three lengths
       ```
-    
-    download2: | 
-      Right now we are working on merging the script to the official HF dataset library. Therefore 
-      you might need to download the `multi_lexsum.py` file manually from our [Github repo](https://github.com/multilexsum/dataset).
 
     teamoverview: |
       The Multi-LexSum dataset are created by the joint effort between the [Allen Institute for Artificial Intelligence](https://allenai.org/) and [Civil Rights Litigation Clearinghouse](https://clearinghouse.net/) from the [University of Michigan](https://umich.edu/). The team members are: 
